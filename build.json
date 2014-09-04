@@ -1,0 +1,17 @@
+[
+
+    "./lib/class/class.js",
+    "./lib/controller/controller.js",
+    "./lib/factory/factory.js",
+    "./lib/model/model.js",
+    "./lib/noop/noop.js",
+    "./lib/process/debounce.js",
+    "./lib/process/interval.js",
+    "./lib/process/throttle.js",
+    "./lib/proto/proto.js",
+    "./lib/provider/provider.js",
+    "./lib/provider/providerFactory.js",
+    "./lib/service/service.js",
+    "./lib/view/view.js"
+
+]
