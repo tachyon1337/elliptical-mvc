@@ -1,12 +1,7 @@
 /*
  * =============================================================
- * elliptical.Class v0.9.1
+ * elliptical.Class
  * =============================================================
- * Copyright (c) 2014 S. Francis, MIS Interactive
- * Licensed MIT
- *
- * Dependencies:
- * utils.js
  *
  * Classical inheritance pattern adopted from JavascriptMVC(which is an implementation of the Resig pattern), sans the jQuery dependency.
  * https://github.com/jupiterjs/jquerymx/blob/master/class/class.js
@@ -346,13 +341,8 @@
 
 /*
  * =============================================================
- * elliptical.Controller v0.9.1
+ * elliptical.Controller
  * =============================================================
- * Copyright (c) 2014 S.Francis, MIS Interactive
- * Licensed MIT
- *
- * Dependencies:
- * elliptical.Class
  *
  * Controller factory for an expressJS style application function/object
  * var Controller = new elliptical.Controller(app);
@@ -473,12 +463,8 @@
 
 /*
  * =============================================================
- * elliptical.factory v0.9.1
+ * elliptical.factory
  * =============================================================
- * Copyright (c) 2014 S.Francis, MIS Interactive
- * Licensed MIT
- *
- * Dependencies:
  *
  */
 
@@ -574,15 +560,8 @@
 
 /*
  * =============================================================
- * elliptical.Model v0.9.1
+ * elliptical.Model
  * =============================================================
- * Copyright (c) 2012 MIS Interactive
- * Licensed MIT
- *
- * Dependencies:
- * class.js
- * static and prototype "interface" for the standard http verbs, plus map(for document dbs), [query and command(e.g., graph dbs)]
- * requires a document/data store provider for implementation
  *
  */
 
@@ -940,13 +919,8 @@
 
 /*
  * =============================================================
- * elliptical.noop v0.9.1
+ * elliptical.noop
  * =============================================================
- * Copyright (c) 2014 S.Francis, MIS Interactive
- * Licensed MIT
- *
- * Dependencies:
- * elliptical.Class
  *
  */
 
@@ -984,13 +958,8 @@
 }));
 /*
  * =============================================================
- * elliptical.debounce v0.9.1
+ * elliptical.debounce
  * =============================================================
- * Copyright (c) 2014 S.Francis, MIS Interactive
- * Licensed MIT
- *
- * Dependencies:
- *
  */
 
 //umd pattern
@@ -1026,12 +995,8 @@
 
 /*
  * =============================================================
- * elliptical.Interval v0.9.1
+ * elliptical.Interval
  * =============================================================
- * Copyright (c) 2014 S.Francis, MIS Interactive
- * Licensed MIT
- *
- * Dependencies:
  *
  */
 
@@ -1086,12 +1051,8 @@
 
 /*
  * =============================================================
- * elliptical.throttle v0.9.1
+ * elliptical.throttle
  * =============================================================
- * Copyright (c) 2014 S.Francis, MIS Interactive
- * Licensed MIT
- *
- * Dependencies:
  *
  */
 
@@ -1128,27 +1089,12 @@
 
 /*
  * =============================================================
- * elliptical.proto v0.9.1
+ * elliptical.proto
  * =============================================================
- * Copyright (c) 2014 S.Francis, MIS Interactive
- * Licensed MIT
- *
- * Dependencies:
- * none
  *
  * EcmaScript5 inheritance pattern mostly culled from:
  * https://github.com/daffl/uberproto
  *
- * Ecma5 Object.create() allows us to dispense with the "facade" of the classical inheritance pattern
- * and the use of function constructors to create object factories. Object.create gives us
- * a clear and non-confusing prototype chain--i.e., prototypal inheritance.
- *
- * However, Ecma6 looks to introduce "Class" as a formal javascript construct, thus guaranteeing that
- * there will be no "official standard pattern" for javascript inheritance. In fact, with the creep of
- * javascript superset langs like typescript, classical inheritance syntax not only is not going anywhere, but likely will predominate,
-  * particularly for large-scale apps/frameworks.
-  *
-  * Hence, at least for the present, this framework treats "proto" as an alt inheritance pattern and not as the core one
  */
 
 //umd pattern
@@ -1256,12 +1202,8 @@
 
 /*
  * =============================================================
- * elliptical.Provider v0.9.1
+ * elliptical.Provider
  * =============================================================
- * Copyright (c) 2014 S.Francis, MIS Interactive
- * Licensed MIT
- *
- * Dependencies:
  *
  */
 
@@ -1291,14 +1233,8 @@
 }));
 /*
  * =============================================================
- * elliptical.$Provider v0.9.1
+ * elliptical.$Provider
  * =============================================================
- * Copyright (c) 2014 S.Francis, MIS Interactive
- * Licensed MIT
- *
- * Dependencies:
- * elliptical.Class
- *
  */
 
 //umd pattern
@@ -1312,7 +1248,7 @@
         define(['../class/class'], factory);
     } else {
         // Browser globals (root is window)
-        root.elliptical.Provider=factory(root.elliptical.Class);
+        root.elliptical.$Provider=factory(root.elliptical.Class);
         root.returnExports = root.elliptical.$Provider;
     }
 }(this, function (Class) {
@@ -1331,12 +1267,8 @@
 
 /*
  * =============================================================
- * elliptical.Service v0.9.1
+ * elliptical.Service
  * =============================================================
- * Copyright (c) 2014 S.Francis, MIS Interactive
- * Licensed MIT
- *
- * Dependencies:
  *
  */
 
@@ -1373,15 +1305,8 @@
 
 /*
  * =============================================================
- * elliptical.View v0.9.1
+ * elliptical.View
  * =============================================================
- * Copyright (c) 2014 S.Francis, MIS Interactive
- * Licensed MIT
- *
- * Dependencies:
- * class.js
- * renders a view, given context,template name and <optional>transition(browser apps)
- * requires a template provider for implementation
  *
  */
 
@@ -1395,7 +1320,7 @@
         define(['elliptical-utils','../class/class'], factory);
     } else {
         // Browser globals (root is window)
-        root.elliptical.View=factory(root.elliptical.utils,root.elliptical);
+        root.elliptical.View=factory(root.elliptical.utils,root.elliptical.Class);
         root.returnExports = root.elliptical.View;
     }
 }(this, function (utils,Class) {

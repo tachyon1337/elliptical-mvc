@@ -10,7 +10,7 @@ module.exports={
     $Provider:require('./lib/provider/providerFactory'),
     Service:require('./lib/service/service'),
     proto:require('./lib/proto/proto'),
-    async:require('./lib/async/async'),
+    async:require('async'),
     debounce:require('./lib/process/debounce'),
     throttle:require('./lib/process/throttle'),
     Interval:require('./lib/process/interval'),
