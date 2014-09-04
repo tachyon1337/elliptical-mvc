@@ -1,34 +1,20 @@
 {
-  "name": "elliptical-mvc",
-  "description": "Elliptical MVC Library",
-  "version": "1.0.0",
-  "author": {
-    "name": "S. Francis"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tachyon1337/elliptical-mvc.git"
-  },
-  "devDependencies": {
-    "gulp": "^3.6.0",
-    "gulp-util": "^2.2.14",
-    "gulp-concat": "^2.2.0",
-    "gulp-tap": "^0.1.1",
-    "fs-extra": "^0.8.1",
-    "gulp-uglify": "^0.2.1",
-    "merge-stream": "^0.1.5"
-  },
-  "readme": "# Elliptical MVC\n\nElliptical MVC Library\n\n",
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/tachyon1337/elliptical-mvc/issues"
-  },
-  "homepage": "https://github.com/tachyon1337/elliptical-mvc",
-  "_id": "elliptical-mvc@1.0.0",
-  "dist": {
-    "shasum": "a3313642f2c1623f71bbb3437ac16c0fb6287f7f"
-  },
-  "_resolved": "git+https://github.com/tachyon1337/elliptical-mvc.git#5d069c1defb8b8c2adc06f360d7c18439ba350bf",
-  "_from": "elliptical-mvc@git+https://github.com/tachyon1337/elliptical-mvc.git"
+    "name": "elliptical-mvc",
+    "description": "Elliptical MVC Library",
+    "version": "1.0.0",
+    "author": "S. Francis",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tachyon1337/elliptical-mvc.git"
+    },
+    "devDependencies": {
+        "gulp": "^3.6.0",
+        "gulp-util": "^2.2.14",
+        "gulp-concat": "^2.2.0",
+        "gulp-tap": "^0.1.1",
+        "fs-extra": "^0.8.1",
+        "gulp-uglify": "^0.2.1",
+        "merge-stream": "^0.1.5"
+    }
 }
